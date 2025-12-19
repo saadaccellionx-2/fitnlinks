@@ -1,6 +1,11 @@
 import { PlaylistView } from "@/components/playlist-view";
 import { OpenAppButton } from "@/components/open-app-button";
 
+// Force dynamic rendering for this route
+export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
+
+
 interface PageProps {
   params: Promise<{
     id: string;
